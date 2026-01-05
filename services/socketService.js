@@ -5,7 +5,7 @@ let io;
 const initializeSocket = (server) => {
     io = socketIO(server, {
         cors: {
-            origin: ['https://walrus-app-at4vl.ondigitalocean.app', 'http://localhost:3000', 'http://localhost:5173'],
+            origin: ['https://planbqa.shop', 'http://localhost:3000', 'http://localhost:5173'],
             methods: ['GET', 'POST'],
             credentials: true
         }
