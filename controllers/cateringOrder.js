@@ -99,6 +99,7 @@ exports.createCateringOrder = async (req, res, next) => {
                 policyAccepted: req.body.policyAccepted,
                 items: req.body.items,
                 numberOfPeople: req.body.numberOfPeople,
+                selectedOptional: req.body.selectedOptional,
                 deliveryCharge: req.body.deliveryCharge,
                 subtotal: req.body.subtotal,
                 total: req.body.total,
