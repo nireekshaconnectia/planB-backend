@@ -106,9 +106,7 @@ const CateringOrderSchema = new mongoose.Schema({
         min: 1
     },
     selectedOptional: [{
-        type: Array,
-        of: String,
-        required: false,
+        type: [String],
         default: []
     }],
     deliveryCharge: {
