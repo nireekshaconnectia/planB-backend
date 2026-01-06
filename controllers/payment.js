@@ -103,6 +103,7 @@ exports.initiatePayment = catchAsync(async (req, res, next) => {
                 policyAccepted: req.body.policyAccepted || false,
                 items: req.body.items || [],
                 numberOfPeople: req.body.numberOfPeople || 1,
+                selectedOptional: req.body.selectedOptional || [],
                 deliveryCharge: req.body.deliveryCharge || 0,
                 subtotal: req.body.subtotal || amount,
                 total: req.body.total || amount,
